@@ -21,7 +21,7 @@ Uses **mock, non-PII** data to demonstrate how customers (e.g., banks/ID apps) c
 
 ## Data (mock)
 
-- File: `insight_events.csv`  
+- File: `insights_events.csv`  
 - Columns:
   - `timestamp` (ISO8601)
   - `event` (`root_detected`, `emulator_detected`, `hooking_attempt`, `debugger_attached`)
@@ -30,3 +30,21 @@ Uses **mock, non-PII** data to demonstrate how customers (e.g., banks/ID apps) c
   - `country` (e.g., “Norway”)
 
 > This repo and demo use **synthetic data only**.
+
+---
+
+## How to run locally
+
+1. Create a virtual environment (optional but recommended)
+   ```bash
+   python3 -m venv .venv && source .venv/bin/activate
+   ```
+2. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Start the app
+   ```bash
+   streamlit run dashboard.py
+   ```
+4. Open the URL printed in the terminal (usually `http://localhost:8501`).
